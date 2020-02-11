@@ -26,12 +26,14 @@
 
         public virtual void Drive(double distance)
         {
-            bool canDrive = this.FuelQuantity - this.FuelConsumption * distance >= 0;
+            //bool canDrive = this.FuelQuantity - this.FuelConsumption * distance >= 0;
 
-            if (canDrive)
-            {
-                this.FuelQuantity -= this.FuelConsumption * distance;
-            }
+            //if (canDrive)
+            //{
+            //    this.FuelQuantity -= this.FuelConsumption * distance;
+            //}
+
+            this.FuelQuantity -= this.FuelConsumption * distance;
         }
 
         public virtual void Refuel(double amount)

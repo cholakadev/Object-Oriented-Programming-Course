@@ -11,10 +11,9 @@
 
         public override void Drive(double distance)
         {
-            base.Drive(distance);
-
-            if (this.FuelQuantity >= 0)
+            if (this.FuelQuantity >= this.FuelConsumption * distance)
             {
+                base.Drive(distance);
                 Console.WriteLine($"Car travelled {distance} km");
             }
 
