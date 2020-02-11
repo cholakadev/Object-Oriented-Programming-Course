@@ -64,8 +64,8 @@
                 }
             }
 
-            Console.WriteLine($"Car: {car.FuelQuantity}");
-            Console.WriteLine($"Truck: {truck.FuelQuantity}");
+            Console.WriteLine($"Car: {car.FuelQuantity:F2}");
+            Console.WriteLine($"Truck: {truck.FuelQuantity:F2}");
         }
     }
 }
